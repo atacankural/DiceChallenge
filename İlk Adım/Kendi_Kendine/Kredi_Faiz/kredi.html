@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="kredi.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container col-sm-4" >
+    <h1 class="text-center">Kredi Hesaplama Formu</h1>
+    <div class="input-group mt-5">
+        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" id="Tutar">
+        <span class="input-group-text">TL</span>
+        <span class="input-group-text">.00</span>
+      </div>
+    <select class="form-select mt-2" aria-label="Default select example" id="Vade">
+        <option selected>Kredi Vadesi</option>
+        <option value="12">12 Ay</option>
+        <option value="24">24 Ay</option>
+        <option value=36>36 Ay</option>
+        <option value=48>48 Ay</option>
+      </select>
+      <button type="click" class="btn btn-success mt-2" id="submitID">Hesapla</button>
+</div>
+   
+
+    <!--
+  <form>
+    <fieldset disabled>
+      <legend>Disabled fieldset example</legend>
+      <div class="mb-3">
+          <label for="disabledTextInput" class="form-label">Disabled input</label>
+          <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+          </div>
+          <div class="mb-3">
+          <label for="disabledSelect" class="form-label">Disabled select menu</label>
+          <select id="disabledSelect" class="form-select">
+              <option>Disabled select</option>
+          </select>
+          </div>
+          <div class="mb-3">
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+              <label class="form-check-label" for="disabledFieldsetCheck">
+              Can't check this
+              </label>
+          </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </fieldset>
+  </form>
+
+    -->
+    <script src="kredi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
